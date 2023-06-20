@@ -16,3 +16,14 @@ It Supports All OS's And All Browsers
 
 ## supported Devices 
 Computers For The Web 
+
+
+
+## Credits To
+PojavLauncherTeam And GuestSneezePlayz
+
+
+
+
+## Do Not Use
+In Mobile If You Want To Use It In your phone please Download The PojavLauncher App From The Playstore Or The Github 
