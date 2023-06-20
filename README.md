@@ -24,5 +24,5 @@ PojavLauncherTeam And GuestSneezePlayz
 All Versions
 
 
-## Do Not Use
+## Do Not Use In Mobile 
 In Mobile If You Want To Use It In your phone please Download The PojavLauncher App From The Playstore Or The Github 
