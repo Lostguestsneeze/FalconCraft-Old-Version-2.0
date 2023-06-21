@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FalconCraft Version Tracker</title>
+</head>
+<body>
+    <h1>Minecraft Version Tracker</h1>
+    <form action="">
+        <label for="version">Minecraft Version:</label>
+        <input type="text" id="version" name="version"><br><br>
+        <label for="location">Location:</label>
+        <select id="location" name="location">
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="eu">Europe</option>
+            <option value="au">Australia</option>
+            <option value="asia">Asia</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="result"></div>
+    <script>
+        const form = document.querySelector('form');
+        const result = document.querySelector('#result');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const version = document.querySelector('#version').value;
+            const location = document.querySelector('#location').value;
+            const url = `https://api.mojang.com/versions/${version}`;
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const versionData = data.filter(item => {
+                        return item.id === version;
+                    });
+                    if (versionData.length > 0) {
+                        const releaseDate = new Date(versionData[0].releaseTime).toLocaleDateString();
+                        result.innerHTML = `The ${version} version was released on ${releaseDate} in ${location.toUpperCase()}.`;
+                    } else {
+                        result.innerHTML = `The ${version} version does not exist.`;
+                    }
+                })
+                .catch(error => {
+                    result.innerHTML = `An error occurred: ${error}.`;
+                });
+        });
+    </script>
+</body>
+</html>
