@@ -23,6 +23,5 @@ PojavLauncherTeam And GuestSneezePlayz
 ## What Minecraft Version It Supports
 All Versions
 
-
-## Do Not Use In Mobile 
-In Mobile If You Want To Use It In your phone please Download The PojavLauncher App From The Playstore Or The Github 
+## Mobile Support Added
+There Are 2 Options Download The  apk from PojavLauncherTeam Or Download the .html file on the realseses
