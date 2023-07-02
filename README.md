@@ -14,9 +14,8 @@ It Supports All OS's And All Browsers
 
 ## supported Devices 
 Computers For The Web 
-
-
-
+## how To Download
+Choose from the releases or go Download it By Downloading It As Zip 
 ## Credits To
 PojavLauncherTeam And GuestSneezePlayz
 
